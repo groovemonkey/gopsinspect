@@ -14,9 +14,20 @@ type FileHandle struct {
 	Path       string
 }
 
-// LinuxProcess represents process information from /proc/[pid]/status
+type NetworkSocket struct {
+	Type string
+	Path string
+}
+
+// LinuxProcessList is used for calculating or displaying metrics from many LinuxProcesses
+type LinuxProcessList []LinuxProcess
+
+// LinuxProcess represents process information
 type LinuxProcess struct {
-	// https://man7.org/linux/man-pages/man5/proc.5.html
+	/*
+		First Batch of values is from /proc/[pid]/status
+		https://man7.org/linux/man-pages/man5/proc.5.html
+	*/
 	Name                 string
 	Umask                string
 	State                string
@@ -47,9 +58,21 @@ type LinuxProcess struct {
 	MemsAllowedList             string
 	VoluntaryContextSwitches    int
 	NonVoluntaryContextSwitches int
+
+	// Additional values, not from /proc/[pid]/status
+	MemPercent float32
+	CPUPercent float32
+	Username   string
+	Groupname  string
+
+	// File Handles
+	NumOpenFileHandles    int
+	NumOpenNetworkSockets int
+	FileHandles           []FileHandle
+	NetworkSockets        []NetworkSocket
 }
 
-func getProcessList() ([]LinuxProcess, error) {
+func getProcessList() (LinuxProcessList, error) {
 	procDirs, err := os.ReadDir("/proc/")
 	if err != nil {
 		return nil, err
@@ -62,7 +85,7 @@ func getProcessList() ([]LinuxProcess, error) {
 		}
 	}
 
-	processList := make([]LinuxProcess, len(validProcDirs))
+	processList := make(LinuxProcessList, len(validProcDirs))
 
 	for i, d := range validProcDirs {
 		fmt.Println(d.Name())

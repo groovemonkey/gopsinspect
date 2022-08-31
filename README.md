@@ -28,14 +28,35 @@ Some combined version of this?
 
 
 ## TODO
-- correct types for %lu, %u, %ll, etc. -- memory addresses, etc.
+- additional lookups: username
+- use fmt.Sscanf() to scan data from /proc/[pid]/status?
 
-- get /proc/stat and add it as "host" metrics or something
-  - maybe inspector.HostStats and inspector.ProcStats?
+- correct types for process data -- memory addresses, etc.
+- get /proc/stat and expose as "host" metrics
 
 - starttime, stime, utime, cstime, cutime: get sysconf(_SC_CLK_TCK) and divide by that
 - somehow mark deprecated/old values?
 
+- add useful "String()" methods so that e.g. a processlist prints out similar to `ps aux`
+- Actually implement Sort() for a PsListing
+
+- benchmark -- is all of this faster than just running and parsing `top` and `ps aux`?
+  - is all of this code actually worth it?
+  - aug 31, 2022 - calling `ps auxh` vs looking it up ourselves:
+    - passthrough (maybe because spawning a shell is slow?)
+      real	0m0.034s
+      user	0m0.000s
+      sys	0m0.014s
+
+    - looking it up ourselves:
+      real	0m0.004s
+      user	0m0.000s
+      sys	0m0.004s
+
+    - raw ps auxh
+      real	0m0.004s
+      user	0m0.000s
+      sys	0m0.004s
 
 ## Dev
 

@@ -7,35 +7,28 @@ import (
 	// "github.com/groovemonkey/gopsinspect/linux"
 )
 
-// Process is a generic interface for representing a system process in an OS-agnostic way
-// type Process interface {
-// 	// OS() string
-// 	Name() string
-// 	PID() int
-// 	PPID() int
-// 	State() string
-
-// 	// File stuff
-// 	FileHandles() []FileHandle
-// 	// TODO(string versions of these, too?)
-// 	UID() int
-// 	GID() int
-
-// 	// Linux Only (blank everywhere else)
-// 	Umask() int
-// 	Groups() []string
-// 	Seccomp() int
-// 	FDsize() int
-// }
-
 func main() {
-	processList, err := getProcessList()
+	// processList, err := getProcessList()
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	os.Exit(1)
+	// }
+	// fmt.Println("number of processes:", len(processList))
+	// fmt.Println("Groups of the first process:", processList[0].Groups)
+	// fmt.Println("CPUsAllowedList of the first process:", processList[0].CPUsAllowedList)
+	// fmt.Println(processList)
+
+	//// Homemade ps aux
+	// fmt.Println("\n\nTesting ps aux view!")
+	// psaux := processList.Ps()
+	// fmt.Printf("%+v\n", psaux)
+
+	// passthrough/exec ps aux
+	fmt.Println("\n\nTesting PsAuxDirect()! (direct command execution of ps aux)")
+	psauxDirect, err := PsAuxDirect()
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("error while calling PsAuxDirect", err)
 		os.Exit(1)
 	}
-	fmt.Println("number of processes:", len(processList))
-	fmt.Println("Groups of the first process:", processList[0].Groups)
-	fmt.Println("CPUsAllowedList of the first process:", processList[0].CPUsAllowedList)
-	fmt.Println(processList)
+	fmt.Printf("%+v\n", psauxDirect)
 }
