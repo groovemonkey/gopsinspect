@@ -4,6 +4,7 @@ package main
 import (
 	"fmt"
 	"os"
+	// "github.com/groovemonkey/gopsinspect/linux"
 )
 
 // Process is a generic interface for representing a system process in an OS-agnostic way
@@ -28,11 +29,13 @@ import (
 // }
 
 func main() {
-	processList, err := linux.getProcessList()
+	processList, err := getProcessList()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	fmt.Println(len(processList))
+	fmt.Println("number of processes:", len(processList))
+	fmt.Println("Groups of the first process:", processList[0].Groups)
+	fmt.Println("CPUsAllowedList of the first process:", processList[0].CPUsAllowedList)
 	fmt.Println(processList)
 }
