@@ -28,6 +28,9 @@ Some combined version of this?
 
 
 ## TODO
+- write a darwin version?
+- write a windows version?
+
 - additional lookups: username
 - use fmt.Sscanf() to scan data from /proc/[pid]/status?
 

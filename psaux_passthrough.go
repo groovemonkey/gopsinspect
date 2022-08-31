@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os/exec"
 	"strings"
 )
@@ -17,12 +16,10 @@ func PsAuxDirect() (PsListing, error) {
 	lines := strings.Split(string(bts), "\n")
 	pslisting := make(PsListing, len(lines))
 
-	fmt.Println("Number of lines:", len(lines))
 	for i, l := range lines {
 		if l == "" {
 			continue
 		}
-		fmt.Println("line: ", l)
 		// Split on whitespace
 		line := strings.Fields(l)
 		psinfo := PsInfo{

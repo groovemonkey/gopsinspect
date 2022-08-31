@@ -8,11 +8,13 @@ import (
 )
 
 func main() {
-	// processList, err := getProcessList()
-	// if err != nil {
-	// 	fmt.Println(err)
-	// 	os.Exit(1)
-	// }
+	platform, err := GetPlatform()
+	if err != nil {
+		return nil, err
+	}
+
+	processList := PsAuxDirect(platform)
+
 	// fmt.Println("number of processes:", len(processList))
 	// fmt.Println("Groups of the first process:", processList[0].Groups)
 	// fmt.Println("CPUsAllowedList of the first process:", processList[0].CPUsAllowedList)
