@@ -8,29 +8,27 @@ import (
 )
 
 func main() {
+	os.Exit(realMain())
+}
+
+func realMain() int {
 	platform, err := GetPlatform()
 	if err != nil {
-		return nil, err
+		// TODO log error
+		return 1
 	}
 
-	processList := PsAuxDirect(platform)
-
-	// fmt.Println("number of processes:", len(processList))
-	// fmt.Println("Groups of the first process:", processList[0].Groups)
-	// fmt.Println("CPUsAllowedList of the first process:", processList[0].CPUsAllowedList)
-	// fmt.Println(processList)
+	processList, err := PsAuxDirect(platform)
+	if err != nil {
+		// TODO log error
+		return 1
+	}
+	fmt.Println(processList)
 
 	//// Homemade ps aux
 	// fmt.Println("\n\nTesting ps aux view!")
 	// psaux := processList.Ps()
 	// fmt.Printf("%+v\n", psaux)
 
-	// passthrough/exec ps aux
-	fmt.Println("\n\nTesting PsAuxDirect()! (direct command execution of ps aux)")
-	psauxDirect, err := PsAuxDirect()
-	if err != nil {
-		fmt.Println("error while calling PsAuxDirect", err)
-		os.Exit(1)
-	}
-	fmt.Printf("%+v\n", psauxDirect)
+	return 0
 }

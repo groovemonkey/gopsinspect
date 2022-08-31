@@ -14,7 +14,7 @@ type Platform struct {
 var Platforms = map[string]Platform{
 	"windows": Platform{
 		Name:      "windows",
-		PsCommand: []string{"ps", "auxh"},
+		PsCommand: []string{"powershell", "-nologo", "-noprofile", "ps", "auxh"},
 	},
 	"linux": Platform{
 		Name:      "windows",

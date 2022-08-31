@@ -5,10 +5,10 @@ import (
 	"strings"
 )
 
-func PsAuxDirect() (PsListing, error) {
-	cmd := "ps"
-	args := "auxh"
-	bts, err := exec.Command(cmd, args).Output()
+func PsAuxDirect(platform Platform) (PsListing, error) {
+	cmd := platform.PsCommand[0]
+	args := platform.PsCommand[1:]
+	bts, err := exec.Command(cmd, args...).Output()
 	if err != nil {
 		return nil, err
 	}

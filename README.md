@@ -1,5 +1,4 @@
 # process-inspection library
-linux-only, at first. Then add Windows?
 
 v0.1: Mimic Information in `ps`:
 ```
@@ -18,18 +17,10 @@ ALSO: mimic information in "top":
 
 Some combined version of this?
 
-
-- get a list of all processes
-- for each process, add data:
-  - memory usage
-  - cpu usage
-  - open files
-  - open network ports
-
-
 ## TODO
-- write a darwin version?
-- write a windows version?
+- test windows version?
+
+- bug: `{ 0         }` empty PsInfos in our results (run on darwin to see)
 
 - additional lookups: username
 - use fmt.Sscanf() to scan data from /proc/[pid]/status?
@@ -37,11 +28,17 @@ Some combined version of this?
 - correct types for process data -- memory addresses, etc.
 - get /proc/stat and expose as "host" metrics
 
+- Additional data gathering:
+  - open files
+  - open network ports
+
 - starttime, stime, utime, cstime, cutime: get sysconf(_SC_CLK_TCK) and divide by that
 - somehow mark deprecated/old values?
 
 - add useful "String()" methods so that e.g. a processlist prints out similar to `ps aux`
 - Actually implement Sort() for a PsListing
+
+- add logging - try a cool logging library
 
 - benchmark -- is all of this faster than just running and parsing `top` and `ps aux`?
   - is all of this code actually worth it?
