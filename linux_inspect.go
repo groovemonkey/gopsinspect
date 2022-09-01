@@ -1,4 +1,4 @@
-package main
+package gopsinspect
 
 import (
 	"fmt"

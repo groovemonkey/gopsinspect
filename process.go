@@ -1,5 +1,5 @@
 // inspect gathers information on running processes in Linux, and maybe other operating systems
-package main
+package gopsinspect
 
 import (
 	"runtime"

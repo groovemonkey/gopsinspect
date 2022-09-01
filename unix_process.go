@@ -1,4 +1,4 @@
-package main
+package gopsinspect
 
 // UnixProcess is analogous to one line of 'ps aux'
 type UnixProcess struct {

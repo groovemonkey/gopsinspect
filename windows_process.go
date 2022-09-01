@@ -1,7 +1,7 @@
 // This file parses Windows Get-Process output, as described in windows_getprocess_data.md
 // It does not pull *all* available data, just enough to mimic the data returned by 'ps' on Unix-like systems
 
-package main
+package gopsinspect
 
 import (
 	"errors"
