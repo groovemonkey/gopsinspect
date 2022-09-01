@@ -4,12 +4,6 @@
 - actually parse new windows command
 - test windows version
 
-- fix build flags issue?
-```
-//go:build linux && darwin
-// +build linux,darwin
-```
-
 - only export the Process interface
   - un-capitalize UnixProcess, etc.
 
@@ -72,7 +66,47 @@ Run:
 `./root/gopsinspect`
 
 
+## Use as a library
 
+Set up your project
+```
+mkdir yourproject && cd yourproject
+go mod init yourmodule
+```
+
+Create your source file:
+```
+cat <<EOF
+package main
+
+import (
+	"fmt"
+
+	gopsinspect "github.com/groovemonkey/gopsinspect/v2"
+)
+
+func main() {
+	processes, err := gopsinspect.Processes()
+	if err != nil {
+		fmt.Println("Error getting processes:", err)
+	}
+	for _, p := range processes {
+		fmt.Println(p.Name)
+	}
+}
+EOF
+```
+
+Do module stuff.
+```
+go mod tidy
+go get github.com/groovemonkey/gopsinspect@main
+```
+
+Try it out.
+```
+go run main.go
+```
 # Original Design Notes
 
 v0.1: Mimic Information in `ps`:

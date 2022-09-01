@@ -34,7 +34,7 @@ type windowsProcess struct {
 	name string
 }
 
-func getProcesses_windows() ([]Process, error) {
+func processes_windows() ([]Process, error) {
 	if runtime.GOOS != "windows" {
 		return nil, errors.New("non-windows platform passed to winGetProcess")
 	}

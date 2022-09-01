@@ -6,7 +6,6 @@ import (
 )
 
 // These types are what's actually going to get exported
-type ProcessList []Process
 type Process interface {
 	Name() string
 	PID() string
@@ -25,23 +24,8 @@ type Process interface {
 
 func Processes() ([]Process, error) {
 	if runtime.GOOS == "windows" {
-		return getProcesses_windows()
+		return processes_windows()
 	} else {
-		return getProcesses_unix()
+		return processes_unix()
 	}
 }
-
-// This is meant to be used as a library, so main() is only a quick-and-dirty test
-// func main() {
-// 	os.Exit(realMain())
-// }
-
-// func realMain() int {
-// 	processList, err := Processes()
-// 	if err != nil {
-// 		// TODO log error
-// 		return 1
-// 	}
-// 	fmt.Println(processList)
-// 	return 0
-// }
