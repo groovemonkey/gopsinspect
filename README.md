@@ -16,6 +16,7 @@
 - correct types for process data -- memory addresses, etc.
 - bug: `{ 0         }` empty PsInfos in our results (run on darwin to see)
 - additional lookups: friendly username, mem%
+  - https://unix.stackexchange.com/questions/496868/how-to-get-users-name-from-uid
 
 - use fmt.Sscanf() to scan data from /proc/[pid]/status?
 - get /proc/stat and expose as "host" metrics
@@ -59,11 +60,11 @@
 ## Dev
 
 Build:
-`GOOS=linux GOARCH=amd64 go build .`
+`GOOS=linux GOARCH=amd64 go build -o bin/ .`
 
 Create and enter Docker environment:
 ```
-docker run -d --rm -t --name gopsinspect -v "$(pwd):/root/" ubuntu:22.04
+docker run -d --rm -t --name gopsinspect -v "$(pwd):/tmp/gopsinspect" ubuntu:22.04
 docker exec -it gopsinspect /bin/bash
 ```
 
