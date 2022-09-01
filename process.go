@@ -2,8 +2,6 @@
 package main
 
 import (
-	"fmt"
-	"os"
 	"runtime"
 )
 
@@ -34,16 +32,16 @@ func Processes() ([]Process, error) {
 }
 
 // This is meant to be used as a library, so main() is only a quick-and-dirty test
-func main() {
-	os.Exit(realMain())
-}
+// func main() {
+// 	os.Exit(realMain())
+// }
 
-func realMain() int {
-	processList, err := Processes()
-	if err != nil {
-		// TODO log error
-		return 1
-	}
-	fmt.Println(processList)
-	return 0
-}
+// func realMain() int {
+// 	processList, err := Processes()
+// 	if err != nil {
+// 		// TODO log error
+// 		return 1
+// 	}
+// 	fmt.Println(processList)
+// 	return 0
+// }
