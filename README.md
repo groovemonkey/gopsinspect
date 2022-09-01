@@ -1,31 +1,23 @@
 # process-inspection library
 
-v0.1: Mimic Information in `ps`:
-```
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.0   4492  3556 pts/0    Ss+  05:34   0:00 bash
-```
-
-ALSO: mimic information in "top":
-  - uptime (days, hours)
-  - users
-  - load averages
-  - tasks (total, running, sleeping, stopped, zombie)
-  - CPU: user, systems, ni, id, wa, hi, si, st
-  - Mem: total, free, used, buff/cache
-  - Swap: total, free, used, avail
-
-Some combined version of this?
-
 ## TODO
-- test windows version?
+- actually parse new windows command
+- test windows version
 
-- bug: `{ 0         }` empty PsInfos in our results (run on darwin to see)
+- fix build flags issue?
+```
+//go:build linux && darwin
+// +build linux,darwin
+```
 
-- additional lookups: username
-- use fmt.Sscanf() to scan data from /proc/[pid]/status?
+- only export the Process interface
+  - un-capitalize UnixProcess, etc.
 
 - correct types for process data -- memory addresses, etc.
+- bug: `{ 0         }` empty PsInfos in our results (run on darwin to see)
+- additional lookups: friendly username, mem%
+
+- use fmt.Sscanf() to scan data from /proc/[pid]/status?
 - get /proc/stat and expose as "host" metrics
 
 - Additional data gathering:
@@ -58,6 +50,12 @@ Some combined version of this?
       user	0m0.000s
       sys	0m0.004s
 
+
+- input-parsing map function
+  - how do I design this to be consumed easily too?
+  - map["Key"]"value"
+  - then each tool-result-representation struct can somehow have a string lookup to its attrs? (no I don't think Go works that way) psInfo.Set("Key", "value") -> does it or logs an error and continues?
+
 ## Dev
 
 Build:
@@ -74,8 +72,24 @@ Run:
 
 
 
-# Design
+# Original Design Notes
 
+v0.1: Mimic Information in `ps`:
+```
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4492  3556 pts/0    Ss+  05:34   0:00 bash
+```
+
+ALSO: mimic information in "top":
+  - uptime (days, hours)
+  - users
+  - load averages
+  - tasks (total, running, sleeping, stopped, zombie)
+  - CPU: user, systems, ni, id, wa, hi, si, st
+  - Mem: total, free, used, buff/cache
+  - Swap: total, free, used, avail
+
+Some combined version of this?
 ## system usage
 /proc/stat
 
