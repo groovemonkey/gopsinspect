@@ -34,44 +34,6 @@ type windowsProcess struct {
 	name string
 }
 
-func processes_windows() ([]Process, error) {
-	if runtime.GOOS != "windows" {
-		return nil, errors.New("non-windows platform passed to winGetProcess")
-	}
-	bts, err := exec.Command("powershell", "\"Get-Process | Format-List *\"").Output()
-	if err != nil {
-		return nil, err
-	}
-
-	// Split lines
-	lines := strings.Split(string(bts), "\n")
-	// Clean up headers -- the first two are garbage, I think?
-	lines = lines[2:]
-
-	pslisting := make([]Process, len(lines))
-	for i, l := range lines {
-		if l == "" {
-			continue
-		}
-		// Split on whitespace
-		line := strings.Fields(l)
-		getpsinfo := &windowsProcess{
-			// TODO show example output line here
-			handles:  line[0],
-			npm:      line[1],
-			pm:       line[2],
-			ws:       line[3],
-			vm:       line[4],
-			cpu:      line[5],
-			id:       line[6],
-			username: line[7],
-			name:     line[8],
-		}
-		pslisting[i] = getpsinfo
-	}
-	return pslisting, nil
-}
-
 func (p *windowsProcess) Name() string {
 	return p.name
 }
@@ -92,4 +54,83 @@ func (p *windowsProcess) CPUTimeTotal() string {
 }
 func (p *windowsProcess) ExtraInfo() map[string]interface{} {
 	return make(map[string]interface{})
+}
+
+func newWindowsProcess(data string) (*windowsProcess, error) {
+	proc := windowsProcess{}
+	lines := strings.Split(data, "\n")
+
+	// Iterate through each line of the data (process "attribute : value")
+	for _, l := range lines {
+		attributes := strings.Fields(l)
+
+		// Only handling simple attr : value pairs right now
+		// This also skips e.g. "attr : {val1, val2, val3}"
+		if len(attributes) != 3 {
+			continue
+		}
+
+		// Switch on Name
+		value := attributes[2]
+		switch attributes[0] {
+
+		case "Name":
+			proc.name = value
+		case "Id":
+			proc.id = value
+		case "Handles":
+			proc.handles = value
+		case "NPM":
+			proc.npm = value
+		case "PM":
+			proc.pm = value
+		case "WS":
+			proc.ws = value
+		case "VM":
+			proc.vm = value
+		case "CPU":
+			proc.cpu = value
+		case "UserNamee":
+			proc.username = value
+		}
+	}
+	return &proc, nil
+}
+
+func windowsProcessList(data string) ([]Process, error) {
+	procs := make([]Process, 0)
+
+	// Split off multi-line process chunks
+	chunks := strings.Split(data, "\n\n")
+
+	for _, chunk := range chunks {
+		if chunk == "" || chunk == "\n" {
+			continue
+		}
+
+		proc, err := newWindowsProcess(chunk)
+		if err != nil {
+			// TODO log error
+			// Ignore process errors
+			continue
+		}
+		procs = append(procs, proc)
+	}
+	return procs, nil
+}
+
+func processes_windows() ([]Process, error) {
+	if runtime.GOOS != "windows" {
+		return nil, errors.New("non-windows platform passed to winGetProcess")
+	}
+	bts, err := exec.Command("powershell", "\"Get-Process | Format-List *\"").Output()
+	if err != nil {
+		return nil, err
+	}
+
+	procs, err := windowsProcessList(string(bts))
+	if err != nil {
+		return nil, err
+	}
+	return procs, nil
 }

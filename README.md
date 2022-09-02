@@ -1,10 +1,9 @@
 # process-inspection library
 
 ## TODO
-- actually parse new windows command
 - test windows version
 
-- add logging - try a cool logging library
+- add unit tests
 
 - correct types for process data -- memory addresses, etc.
 
