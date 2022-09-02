@@ -12,20 +12,23 @@ func psAuxDirect() ([]Process, error) {
 	if runtime.GOOS == "windows" {
 		return nil, errors.New("unsupported platform windows passed to psAuxDirect")
 	}
-	bts, err := exec.Command("ps", "auxh").Output()
+	bts, err := exec.Command("ps", "aux").Output()
 	if err != nil {
 		return nil, err
 	}
 
 	lines := strings.Split(string(bts), "\n")
-	processes := make([]Process, len(lines))
+	// Can't be len(lines), because we trim/exclude lines after this
+	processes := make([]Process, 0)
 
-	for i, l := range lines {
+	// For each process entry (omitting the first line, which is the ps header - unavoidable on some unix systems like Mac OS)
+	for _, l := range lines[1:] {
 		if l == "" {
 			continue
 		}
-		// Split on whitespace
+		// Split into whitespace-delimited columns
 		line := strings.Fields(l)
+
 		proc := &UnixProcess{
 			// ["root"  "1"  "0.0"  "0.0"   "4492"  "3556" "pts/0"  "Ss+" "06:02"  "0:00" "bash"]
 			user:              line[0],
@@ -40,7 +43,7 @@ func psAuxDirect() ([]Process, error) {
 			time:              line[9],
 			command:           line[10],
 		}
-		processes[i] = proc
+		processes = append(processes, proc)
 	}
 	return processes, nil
 }
