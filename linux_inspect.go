@@ -1,3 +1,4 @@
+// This file is an early POC which I might get back to once I have a solid v1
 package gopsinspect
 
 import (

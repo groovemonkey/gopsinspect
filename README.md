@@ -4,11 +4,10 @@
 - actually parse new windows command
 - test windows version
 
-- only export the Process interface
-  - un-capitalize UnixProcess, etc.
+- add logging - try a cool logging library
 
 - correct types for process data -- memory addresses, etc.
-- bug: `{ 0         }` empty PsInfos in our results (run on darwin to see)
+
 - additional lookups: friendly username, mem%
   - https://unix.stackexchange.com/questions/496868/how-to-get-users-name-from-uid
 
@@ -24,8 +23,6 @@
 
 - add useful "String()" methods so that e.g. a processlist prints out similar to `ps aux`
 - Actually implement Sort() for a PsListing
-
-- add logging - try a cool logging library
 
 - benchmark -- is all of this faster than just running and parsing `top` and `ps aux`?
   - is all of this code actually worth it?
@@ -68,45 +65,8 @@ Run:
 
 ## Use as a library
 
-Set up your project
-```
-mkdir yourproject && cd yourproject
-go mod init yourmodule
-```
+See `cmd/gopsinspect/main.go`
 
-Create your source file:
-```
-cat <<EOF
-package main
-
-import (
-	"fmt"
-
-	gopsinspect "github.com/groovemonkey/gopsinspect/v2"
-)
-
-func main() {
-	processes, err := gopsinspect.Processes()
-	if err != nil {
-		fmt.Println("Error getting processes:", err)
-	}
-	for _, p := range processes {
-		fmt.Println(p.Name)
-	}
-}
-EOF
-```
-
-Do module stuff.
-```
-go mod tidy
-go get github.com/groovemonkey/gopsinspect@main
-```
-
-Try it out.
-```
-go run main.go
-```
 # Original Design Notes
 
 v0.1: Mimic Information in `ps`:
