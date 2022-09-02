@@ -33,6 +33,10 @@ func (p *UnixProcess) State() string {
 	return p.state
 }
 
+func (p *UnixProcess) StartTime() string {
+	return p.start
+}
+
 func (p *UnixProcess) VirtualMemorySize() string {
 	return p.virtualmemorysize
 }

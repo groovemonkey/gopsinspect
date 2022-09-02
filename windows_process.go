@@ -26,6 +26,8 @@ type windowsProcess struct {
 	// Process ID
 	id string
 
+	starttime string
+
 	// What is this? Shown on my W10 test machine but not documented here: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.2#parameters
 	// SI int
 
@@ -37,21 +39,31 @@ type windowsProcess struct {
 func (p *windowsProcess) Name() string {
 	return p.name
 }
+
 func (p *windowsProcess) PID() string {
 	return p.id
 }
+
 func (p *windowsProcess) State() string {
 	return "TODO"
 }
+
+func (p *windowsProcess) StartTime() string {
+	return p.starttime
+}
+
 func (p *windowsProcess) VirtualMemorySize() string {
 	return p.vm
 }
+
 func (p *windowsProcess) CPU() string {
 	return "TODO"
 }
+
 func (p *windowsProcess) CPUTimeTotal() string {
 	return p.cpu
 }
+
 func (p *windowsProcess) ExtraInfo() map[string]interface{} {
 	return make(map[string]interface{})
 }
@@ -61,6 +73,9 @@ func newWindowsProcess(data string) (*windowsProcess, error) {
 	lines := strings.Split(data, "\n")
 
 	// Iterate through each line of the data (process "attribute : value")
+	/* ALTERNATE IMPLEMENTATION, if line ordering is consistent:
+	proc.foobar = windowsPsVal(lines[12], idx)
+	*/
 	for _, l := range lines {
 		attributes := strings.Fields(l)
 
@@ -90,7 +105,9 @@ func newWindowsProcess(data string) (*windowsProcess, error) {
 			proc.vm = value
 		case "CPU":
 			proc.cpu = value
-		case "UserNamee":
+		case "StartTime":
+			proc.starttime = value
+		case "UserName":
 			proc.username = value
 		}
 	}

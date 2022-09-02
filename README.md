@@ -10,7 +10,6 @@
 - additional lookups: friendly username, mem%
   - https://unix.stackexchange.com/questions/496868/how-to-get-users-name-from-uid
 
-- use fmt.Sscanf() to scan data from /proc/[pid]/status?
 - get /proc/stat and expose as "host" metrics
 
 - Additional data gathering:
@@ -19,6 +18,7 @@
 
 - starttime, stime, utime, cstime, cutime: get sysconf(_SC_CLK_TCK) and divide by that
 - somehow mark deprecated/old values?
+- process priority!
 
 - add useful "String()" methods so that e.g. a processlist prints out similar to `ps aux`
 - Actually implement Sort() for a PsListing

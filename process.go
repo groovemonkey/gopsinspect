@@ -10,6 +10,7 @@ type Process interface {
 	Name() string
 	PID() string
 	State() string
+	StartTime() string
 	// User?
 	// In kilobytes
 	VirtualMemorySize() string //TODO int
