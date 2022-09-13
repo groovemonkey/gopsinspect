@@ -117,11 +117,11 @@ func newWindowsProcess(data string) (*windowsProcess, error) {
 func windowsProcessList(data string) ([]Process, error) {
 	procs := make([]Process, 0)
 
-	// Split off multi-line process chunks
-	chunks := strings.Split(data, "\n\n")
+	// Split off multi-line process chunks. Windows' version of \n is \r\n
+	chunks := strings.Split(data, "\r\n\r\n")
 
 	for _, chunk := range chunks {
-		if chunk == "" || chunk == "\n" {
+		if chunk == "" || chunk == "\r\n" {
 			continue
 		}
 
@@ -140,7 +140,7 @@ func processes_windows() ([]Process, error) {
 	if runtime.GOOS != "windows" {
 		return nil, errors.New("non-windows platform passed to winGetProcess")
 	}
-	bts, err := exec.Command("powershell", "\"Get-Process | Format-List *\"").Output()
+	bts, err := exec.Command("powershell", "Get-Process | Format-List *").Output()
 	if err != nil {
 		return nil, err
 	}
