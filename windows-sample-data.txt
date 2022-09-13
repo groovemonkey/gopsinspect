@@ -1,0 +1,1030 @@
+
+Name                       : RuntimeBroker
+Id                         : 7552
+PriorityClass              : Normal
+FileVersion                : 10.0.19041.746 (WinBuild.160101.0800)
+HandleCount                : 394
+WorkingSet                 : 25112576
+PagedMemorySize            : 4493312
+PrivateMemorySize          : 4493312
+VirtualMemorySize          : 146677760
+TotalProcessorTime         : 00:00:00.1875000
+SI                         : 2
+Handles                    : 394
+VM                         : 2203464900608
+WS                         : 25112576
+PM                         : 4493312
+NPM                        : 18104
+Path                       : C:\Windows\System32\RuntimeBroker.exe
+Company                    : Microsoft Corporation
+CPU                        : 0.1875
+ProductVersion             : 10.0.19041.746
+Description                : Runtime Broker
+Product                    : Microsoftr Windowsr Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2548
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (RuntimeBroker.exe)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (RuntimeBroker.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 18104
+NonpagedSystemMemorySize64 : 18104
+PagedMemorySize64          : 4493312
+PagedSystemMemorySize      : 225928
+PagedSystemMemorySize64    : 225928
+PeakPagedMemorySize        : 5935104
+PeakPagedMemorySize64      : 5935104
+PeakWorkingSet             : 31756288
+PeakWorkingSet64           : 31756288
+PeakVirtualMemorySize      : 170749952
+PeakVirtualMemorySize64    : 2203488972800
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 4493312
+PrivilegedProcessorTime    : 00:00:00.1406250
+ProcessName                : RuntimeBroker
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 8:39:33 AM
+SynchronizingObject        :
+Threads                    : {2912, 12176, 4036, 15552}
+UserProcessorTime          : 00:00:00.0468750
+VirtualMemorySize64        : 2203464900608
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 25112576
+Site                       :
+Container                  :
+
+Name                       : RuntimeBroker
+Id                         : 8944
+PriorityClass              : Normal
+FileVersion                : 10.0.19041.746 (WinBuild.160101.0800)
+HandleCount                : 354
+WorkingSet                 : 26218496
+PagedMemorySize            : 5832704
+PrivateMemorySize          : 5832704
+VirtualMemorySize          : 173236224
+TotalProcessorTime         : 00:00:00.4843750
+SI                         : 2
+Handles                    : 354
+VM                         : 2203491459072
+WS                         : 26218496
+PM                         : 5832704
+NPM                        : 18264
+Path                       : C:\Windows\System32\RuntimeBroker.exe
+Company                    : Microsoft Corporation
+CPU                        : 0.484375
+ProductVersion             : 10.0.19041.746
+Description                : Runtime Broker
+Product                    : Microsoftr Windowsr Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2968
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (RuntimeBroker.exe)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (RuntimeBroker.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 18264
+NonpagedSystemMemorySize64 : 18264
+PagedMemorySize64          : 5832704
+PagedSystemMemorySize      : 244688
+PagedSystemMemorySize64    : 244688
+PeakPagedMemorySize        : 19279872
+PeakPagedMemorySize64      : 19279872
+PeakWorkingSet             : 42270720
+PeakWorkingSet64           : 42270720
+PeakVirtualMemorySize      : 204767232
+PeakVirtualMemorySize64    : 2203522990080
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 5832704
+PrivilegedProcessorTime    : 00:00:00.1093750
+ProcessName                : RuntimeBroker
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 8:39:14 AM
+SynchronizingObject        :
+Threads                    : {3168, 9904, 5548, 6096...}
+UserProcessorTime          : 00:00:00.3750000
+VirtualMemorySize64        : 2203491459072
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 26218496
+Site                       :
+Container                  :
+
+Name                       : RuntimeBroker
+Id                         : 10700
+PriorityClass              : Normal
+FileVersion                : 10.0.19041.746 (WinBuild.160101.0800)
+HandleCount                : 263
+WorkingSet                 : 17264640
+PagedMemorySize            : 3657728
+PrivateMemorySize          : 3657728
+VirtualMemorySize          : 134287360
+TotalProcessorTime         : 00:00:01.3437500
+SI                         : 2
+Handles                    : 263
+VM                         : 2203452510208
+WS                         : 17264640
+PM                         : 3657728
+NPM                        : 14680
+Path                       : C:\Windows\System32\RuntimeBroker.exe
+Company                    : Microsoft Corporation
+CPU                        : 1.34375
+ProductVersion             : 10.0.19041.746
+Description                : Runtime Broker
+Product                    : Microsoftr Windowsr Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2888
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (RuntimeBroker.exe)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (RuntimeBroker.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 14680
+NonpagedSystemMemorySize64 : 14680
+PagedMemorySize64          : 3657728
+PagedSystemMemorySize      : 193768
+PagedSystemMemorySize64    : 193768
+PeakPagedMemorySize        : 5169152
+PeakPagedMemorySize64      : 5169152
+PeakWorkingSet             : 21770240
+PeakWorkingSet64           : 21770240
+PeakVirtualMemorySize      : 162443264
+PeakVirtualMemorySize64    : 2203480666112
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 3657728
+PrivilegedProcessorTime    : 00:00:00.8281250
+ProcessName                : RuntimeBroker
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 8:39:13 AM
+SynchronizingObject        :
+Threads                    : {12232, 4360}
+UserProcessorTime          : 00:00:00.5156250
+VirtualMemorySize64        : 2203452510208
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 17264640
+Site                       :
+Container                  :
+
+Name                       : RuntimeBroker
+Id                         : 11444
+PriorityClass              : Normal
+FileVersion                : 10.0.19041.746 (WinBuild.160101.0800)
+HandleCount                : 592
+WorkingSet                 : 50159616
+PagedMemorySize            : 20647936
+PrivateMemorySize          : 20647936
+VirtualMemorySize          : 260255744
+TotalProcessorTime         : 00:00:08.5156250
+SI                         : 2
+Handles                    : 592
+VM                         : 2203578478592
+WS                         : 50159616
+PM                         : 20647936
+NPM                        : 29184
+Path                       : C:\Windows\System32\RuntimeBroker.exe
+Company                    : Microsoft Corporation
+CPU                        : 8.515625
+ProductVersion             : 10.0.19041.746
+Description                : Runtime Broker
+Product                    : Microsoftr Windowsr Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2080
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (RuntimeBroker.exe)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (RuntimeBroker.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 29184
+NonpagedSystemMemorySize64 : 29184
+PagedMemorySize64          : 20647936
+PagedSystemMemorySize      : 372704
+PagedSystemMemorySize64    : 372704
+PeakPagedMemorySize        : 25112576
+PeakPagedMemorySize64      : 25112576
+PeakWorkingSet             : 53878784
+PeakWorkingSet64           : 53878784
+PeakVirtualMemorySize      : 273932288
+PeakVirtualMemorySize64    : 2203592155136
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 20647936
+PrivilegedProcessorTime    : 00:00:04.0625000
+ProcessName                : RuntimeBroker
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 8:39:12 AM
+SynchronizingObject        :
+Threads                    : {11336, 11308, 8664, 1052...}
+UserProcessorTime          : 00:00:04.4531250
+VirtualMemorySize64        : 2203578478592
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 50159616
+Site                       :
+Container                  :
+
+Name                       : RuntimeBroker
+Id                         : 15200
+PriorityClass              : Normal
+FileVersion                : 10.0.19041.746 (WinBuild.160101.0800)
+HandleCount                : 264
+WorkingSet                 : 17563648
+PagedMemorySize            : 5111808
+PrivateMemorySize          : 5111808
+VirtualMemorySize          : 144453632
+TotalProcessorTime         : 00:00:00.1093750
+SI                         : 2
+Handles                    : 264
+VM                         : 2203462676480
+WS                         : 17563648
+PM                         : 5111808
+NPM                        : 15496
+Path                       : C:\Windows\System32\RuntimeBroker.exe
+Company                    : Microsoft Corporation
+CPU                        : 0.109375
+ProductVersion             : 10.0.19041.746
+Description                : Runtime Broker
+Product                    : Microsoftr Windowsr Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2892
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (RuntimeBroker.exe)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (RuntimeBroker.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 15496
+NonpagedSystemMemorySize64 : 15496
+PagedMemorySize64          : 5111808
+PagedSystemMemorySize      : 215848
+PagedSystemMemorySize64    : 215848
+PeakPagedMemorySize        : 6082560
+PeakPagedMemorySize64      : 6082560
+PeakWorkingSet             : 22913024
+PeakWorkingSet64           : 22913024
+PeakVirtualMemorySize      : 158932992
+PeakVirtualMemorySize64    : 2203477155840
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 5111808
+PrivilegedProcessorTime    : 00:00:00.0781250
+ProcessName                : RuntimeBroker
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 9:34:53 AM
+SynchronizingObject        :
+Threads                    : {11804, 15780, 7264, 14972...}
+UserProcessorTime          : 00:00:00.0312500
+VirtualMemorySize64        : 2203462676480
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 17563648
+Site                       :
+Container                  :
+
+Name                       : SDXHelper
+Id                         : 15356
+PriorityClass              : Idle
+FileVersion                : 16.0.15601.20088
+HandleCount                : 612
+WorkingSet                 : 21868544
+PagedMemorySize            : 13144064
+PrivateMemorySize          : 13144064
+VirtualMemorySize          : 209313792
+TotalProcessorTime         : 00:00:00.9375000
+SI                         : 2
+Handles                    : 612
+VM                         : 2203527536640
+WS                         : 21868544
+PM                         : 13144064
+NPM                        : 24088
+Path                       : C:\Program Files\Microsoft Office\Root\Office16\SDXHelper.exe
+Company                    : Microsoft Corporation
+CPU                        : 0.9375
+ProductVersion             : 16.0.15601.20088
+Description                : Microsoft Office SDX Helper
+Product                    : Microsoft Office
+__NounName                 : Process
+BasePriority               : 4
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2920
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (SDXHelper.exe)
+MaxWorkingSet              : 33554432
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (SDXHelper.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 24088
+NonpagedSystemMemorySize64 : 24088
+PagedMemorySize64          : 13144064
+PagedSystemMemorySize      : 316256
+PagedSystemMemorySize64    : 316256
+PeakPagedMemorySize        : 17289216
+PeakPagedMemorySize64      : 17289216
+PeakWorkingSet             : 33570816
+PeakWorkingSet64           : 33570816
+PeakVirtualMemorySize      : 225845248
+PeakVirtualMemorySize64    : 2203544068096
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 13144064
+PrivilegedProcessorTime    : 00:00:00.5781250
+ProcessName                : SDXHelper
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 8:54:11 AM
+SynchronizingObject        :
+Threads                    : {7644, 14708, 1980, 15080...}
+UserProcessorTime          : 00:00:00.3593750
+VirtualMemorySize64        : 2203527536640
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 21868544
+Site                       :
+Container                  :
+
+
+Name                       : svchost
+Id                         : 1368
+PriorityClass              :
+FileVersion                :
+HandleCount                : 249
+WorkingSet                 : 8253440
+PagedMemorySize            : 2539520
+PrivateMemorySize          : 2539520
+VirtualMemorySize          : 83382272
+TotalProcessorTime         :
+SI                         : 0
+Handles                    : 249
+VM                         : 2203401605120
+WS                         : 8253440
+PM                         : 2539520
+NPM                        : 13328
+Path                       :
+Company                    :
+CPU                        :
+ProductVersion             :
+Description                :
+Product                    :
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  :
+ExitTime                   :
+Handle                     :
+SafeHandle                 :
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 :
+MaxWorkingSet              :
+MinWorkingSet              :
+Modules                    :
+NonpagedSystemMemorySize   : 13328
+NonpagedSystemMemorySize64 : 13328
+PagedMemorySize64          : 2539520
+PagedSystemMemorySize      : 100976
+PagedSystemMemorySize64    : 100976
+PeakPagedMemorySize        : 3035136
+PeakPagedMemorySize64      : 3035136
+PeakWorkingSet             : 10997760
+PeakWorkingSet64           : 10997760
+PeakVirtualMemorySize      : 89501696
+PeakVirtualMemorySize64    : 2203407724544
+PriorityBoostEnabled       :
+PrivateMemorySize64        : 2539520
+PrivilegedProcessorTime    :
+ProcessName                : svchost
+ProcessorAffinity          :
+Responding                 : True
+SessionId                  : 0
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  :
+SynchronizingObject        :
+Threads                    : {1372, 4936, 4988, 7096}
+UserProcessorTime          :
+VirtualMemorySize64        : 2203401605120
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 8253440
+Site                       :
+Container                  :
+
+Name                       : svchost
+Id                         : 1388
+PriorityClass              :
+FileVersion                :
+HandleCount                : 170
+WorkingSet                 : 6778880
+PagedMemorySize            : 2043904
+PrivateMemorySize          : 2043904
+VirtualMemorySize          : 77856768
+TotalProcessorTime         :
+SI                         : 0
+Handles                    : 170
+VM                         : 2203396079616
+WS                         : 6778880
+PM                         : 2043904
+NPM                        : 9296
+Path                       :
+Company                    :
+CPU                        :
+ProductVersion             :
+Description                :
+Product                    :
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  :
+ExitTime                   :
+Handle                     :
+SafeHandle                 :
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 :
+MaxWorkingSet              :
+MinWorkingSet              :
+Modules                    :
+NonpagedSystemMemorySize   : 9296
+NonpagedSystemMemorySize64 : 9296
+PagedMemorySize64          : 2043904
+PagedSystemMemorySize      : 73520
+PagedSystemMemorySize64    : 73520
+PeakPagedMemorySize        : 2375680
+PeakPagedMemorySize64      : 2375680
+PeakWorkingSet             : 8396800
+PeakWorkingSet64           : 8396800
+PeakVirtualMemorySize      : 82583552
+PeakVirtualMemorySize64    : 2203400806400
+PriorityBoostEnabled       :
+PrivateMemorySize64        : 2043904
+PrivilegedProcessorTime    :
+ProcessName                : svchost
+ProcessorAffinity          :
+Responding                 : True
+SessionId                  : 0
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  :
+SynchronizingObject        :
+Threads                    : {1336, 2184, 3320, 2660...}
+UserProcessorTime          :
+VirtualMemorySize64        : 2203396079616
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 6778880
+Site                       :
+Container                  :
+
+Name                       : svchost
+Id                         : 1488
+PriorityClass              :
+FileVersion                :
+HandleCount                : 417
+WorkingSet                 : 12783616
+PagedMemorySize            : 7364608
+PrivateMemorySize          : 7364608
+VirtualMemorySize          : 109326336
+TotalProcessorTime         :
+SI                         : 0
+Handles                    : 417
+VM                         : 2203427549184
+WS                         : 12783616
+PM                         : 7364608
+NPM                        : 18400
+Path                       :
+Company                    :
+CPU                        :
+ProductVersion             :
+Description                :
+Product                    :
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  :
+ExitTime                   :
+Handle                     :
+SafeHandle                 :
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 :
+MaxWorkingSet              :
+MinWorkingSet              :
+Modules                    :
+NonpagedSystemMemorySize   : 18400
+NonpagedSystemMemorySize64 : 18400
+PagedMemorySize64          : 7364608
+PagedSystemMemorySize      : 290984
+PagedSystemMemorySize64    : 290984
+PeakPagedMemorySize        : 8282112
+PeakPagedMemorySize64      : 8282112
+PeakWorkingSet             : 17199104
+PeakWorkingSet64           : 17199104
+PeakVirtualMemorySize      : 144527360
+PeakVirtualMemorySize64    : 2203462750208
+PriorityBoostEnabled       :
+PrivateMemorySize64        : 7364608
+PrivilegedProcessorTime    :
+ProcessName                : svchost
+ProcessorAffinity          :
+Responding                 : True
+SessionId                  : 0
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  :
+SynchronizingObject        :
+Threads                    : {1492, 1516, 1604, 1724...}
+UserProcessorTime          :
+VirtualMemorySize64        : 2203427549184
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 12783616
+Site                       :
+Container                  :
+
+
+Name                       : TextInputHost
+Id                         : 3868
+PriorityClass              : Normal
+FileVersion                : 121.9202.4105.0
+HandleCount                : 618
+WorkingSet                 : 54120448
+PagedMemorySize            : 33980416
+PrivateMemorySize          : 33980416
+VirtualMemorySize          : 426577920
+TotalProcessorTime         : 00:00:01.0156250
+SI                         : 2
+Handles                    : 618
+VM                         : 2203744800768
+WS                         : 54120448
+PM                         : 33980416
+NPM                        : 25656
+Path                       : C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+Company                    : Microsoft Corporation
+CPU                        : 1.015625
+ProductVersion             : 121.9202.4105.0
+Description                :
+Product                    : Microsoftr Windowsr Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2640
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 66274
+MainWindowTitle            : Microsoft Text Input Application
+MainModule                 : System.Diagnostics.ProcessModule (TextInputHost.exe)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (TextInputHost.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 25656
+NonpagedSystemMemorySize64 : 25656
+PagedMemorySize64          : 33980416
+PagedSystemMemorySize      : 556072
+PagedSystemMemorySize64    : 556072
+PeakPagedMemorySize        : 34099200
+PeakPagedMemorySize64      : 34099200
+PeakWorkingSet             : 54882304
+PeakWorkingSet64           : 54882304
+PeakVirtualMemorySize      : 436293632
+PeakVirtualMemorySize64    : 2203754516480
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 33980416
+PrivilegedProcessorTime    : 00:00:00.3593750
+ProcessName                : TextInputHost
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 8:39:21 AM
+SynchronizingObject        :
+Threads                    : {8640, 8368, 7932, 5796...}
+UserProcessorTime          : 00:00:00.6562500
+VirtualMemorySize64        : 2203744800768
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 54120448
+Site                       :
+Container                  :
+
+Name                       : unsecapp
+Id                         : 5952
+PriorityClass              :
+FileVersion                :
+HandleCount                : 122
+WorkingSet                 : 5181440
+PagedMemorySize            : 1613824
+PrivateMemorySize          : 1613824
+VirtualMemorySize          : 68227072
+TotalProcessorTime         :
+SI                         : 0
+Handles                    : 122
+VM                         : 2203386449920
+WS                         : 5181440
+PM                         : 1613824
+NPM                        : 7744
+Path                       :
+Company                    :
+CPU                        :
+ProductVersion             :
+Description                :
+Product                    :
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  :
+ExitTime                   :
+Handle                     :
+SafeHandle                 :
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 :
+MaxWorkingSet              :
+MinWorkingSet              :
+Modules                    :
+NonpagedSystemMemorySize   : 7744
+NonpagedSystemMemorySize64 : 7744
+PagedMemorySize64          : 1613824
+PagedSystemMemorySize      : 65248
+PagedSystemMemorySize64    : 65248
+PeakPagedMemorySize        : 1613824
+PeakPagedMemorySize64      : 1613824
+PeakWorkingSet             : 7237632
+PeakWorkingSet64           : 7237632
+PeakVirtualMemorySize      : 72421376
+PeakVirtualMemorySize64    : 2203390644224
+PriorityBoostEnabled       :
+PrivateMemorySize64        : 1613824
+PrivilegedProcessorTime    :
+ProcessName                : unsecapp
+ProcessorAffinity          :
+Responding                 : True
+SessionId                  : 0
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  :
+SynchronizingObject        :
+Threads                    : {5956, 3708, 13044}
+UserProcessorTime          :
+VirtualMemorySize64        : 2203386449920
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 5181440
+Site                       :
+Container                  :
+
+Name                       : UserOOBEBroker
+Id                         : 14736
+PriorityClass              : Normal
+FileVersion                : 10.0.19041.746 (WinBuild.160101.0800)
+HandleCount                : 144
+WorkingSet                 : 10100736
+PagedMemorySize            : 2166784
+PrivateMemorySize          : 2166784
+VirtualMemorySize          : 99459072
+TotalProcessorTime         : 00:00:00.0468750
+SI                         : 2
+Handles                    : 144
+VM                         : 2203417681920
+WS                         : 10100736
+PM                         : 2166784
+NPM                        : 10736
+Path                       : C:\Windows\System32\oobe\UserOOBEBroker.exe
+Company                    : Microsoft Corporation
+CPU                        : 0.046875
+ProductVersion             : 10.0.19041.746
+Description                : User OOBE Broker
+Product                    : Microsoftr Windowsr Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 2764
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (UserOOBEBroker.exe)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (UserOOBEBroker.exe), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule
+                             (KERNEL32.DLL), System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 10736
+NonpagedSystemMemorySize64 : 10736
+PagedMemorySize64          : 2166784
+PagedSystemMemorySize      : 125384
+PagedSystemMemorySize64    : 125384
+PeakPagedMemorySize        : 2203648
+PeakPagedMemorySize64      : 2203648
+PeakWorkingSet             : 10113024
+PeakWorkingSet64           : 10113024
+PeakVirtualMemorySize      : 101040128
+PeakVirtualMemorySize64    : 2203419262976
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 2166784
+PrivilegedProcessorTime    : 00:00:00.0312500
+ProcessName                : UserOOBEBroker
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 9/13/2022 8:49:14 AM
+SynchronizingObject        :
+Threads                    : {15304, 15256, 8176, 14272}
+UserProcessorTime          : 00:00:00.0156250
+VirtualMemorySize64        : 2203417681920
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 10100736
+Site                       :
+Container                  :
+
+Name                       : wininit
+Id                         : 784
+PriorityClass              :
+FileVersion                :
+HandleCount                : 171
+WorkingSet                 : 5324800
+PagedMemorySize            : 1679360
+PrivateMemorySize          : 1679360
+VirtualMemorySize          : 70098944
+TotalProcessorTime         :
+SI                         : 0
+Handles                    : 171
+VM                         : 2203388321792
+WS                         : 5324800
+PM                         : 1679360
+NPM                        : 11376
+Path                       :
+Company                    :
+CPU                        :
+ProductVersion             :
+Description                :
+Product                    :
+__NounName                 : Process
+BasePriority               : 13
+ExitCode                   :
+HasExited                  :
+ExitTime                   :
+Handle                     :
+SafeHandle                 :
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 :
+MaxWorkingSet              :
+MinWorkingSet              :
+Modules                    :
+NonpagedSystemMemorySize   : 11376
+NonpagedSystemMemorySize64 : 11376
+PagedMemorySize64          : 1679360
+PagedSystemMemorySize      : 79616
+PagedSystemMemorySize64    : 79616
+PeakPagedMemorySize        : 2195456
+PeakPagedMemorySize64      : 2195456
+PeakWorkingSet             : 6971392
+PeakWorkingSet64           : 6971392
+PeakVirtualMemorySize      : 82243584
+PeakVirtualMemorySize64    : 2203400466432
+PriorityBoostEnabled       :
+PrivateMemorySize64        : 1679360
+PrivilegedProcessorTime    :
+ProcessName                : wininit
+ProcessorAffinity          :
+Responding                 : True
+SessionId                  : 0
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  :
+SynchronizingObject        :
+Threads                    : {788}
+UserProcessorTime          :
+VirtualMemorySize64        : 2203388321792
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 5324800
+Site                       :
+Container                  :
+
+Name                       : winlogon
+Id                         : 14084
+PriorityClass              :
+FileVersion                :
+HandleCount                : 296
+WorkingSet                 : 11939840
+PagedMemorySize            : 2973696
+PrivateMemorySize          : 2973696
+VirtualMemorySize          : 102821888
+TotalProcessorTime         :
+SI                         : 2
+Handles                    : 296
+VM                         : 2203421044736
+WS                         : 11939840
+PM                         : 2973696
+NPM                        : 13832
+Path                       :
+Company                    :
+CPU                        :
+ProductVersion             :
+Description                :
+Product                    :
+__NounName                 : Process
+BasePriority               : 13
+ExitCode                   :
+HasExited                  :
+ExitTime                   :
+Handle                     :
+SafeHandle                 :
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 :
+MaxWorkingSet              :
+MinWorkingSet              :
+Modules                    :
+NonpagedSystemMemorySize   : 13832
+NonpagedSystemMemorySize64 : 13832
+PagedMemorySize64          : 2973696
+PagedSystemMemorySize      : 147072
+PagedSystemMemorySize64    : 147072
+PeakPagedMemorySize        : 3411968
+PeakPagedMemorySize64      : 3411968
+PeakWorkingSet             : 45211648
+PeakWorkingSet64           : 45211648
+PeakVirtualMemorySize      : 139022336
+PeakVirtualMemorySize64    : 2203457245184
+PriorityBoostEnabled       :
+PrivateMemorySize64        : 2973696
+PrivilegedProcessorTime    :
+ProcessName                : winlogon
+ProcessorAffinity          :
+Responding                 : True
+SessionId                  : 2
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  :
+SynchronizingObject        :
+Threads                    : {5984, 11476, 12680, 2468...}
+UserProcessorTime          :
+VirtualMemorySize64        : 2203421044736
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 11939840
+Site                       :
+Container                  :
+
+Name                       : WMIRegistrationService
+Id                         : 4968
+PriorityClass              :
+FileVersion                :
+HandleCount                : 246
+WorkingSet                 : 3743744
+PagedMemorySize            : 2588672
+PrivateMemorySize          : 2588672
+VirtualMemorySize          : 87965696
+TotalProcessorTime         :
+SI                         : 0
+Handles                    : 246
+VM                         : 87965696
+WS                         : 3743744
+PM                         : 2588672
+NPM                        : 12696
+Path                       :
+Company                    :
+CPU                        :
+ProductVersion             :
+Description                :
+Product                    :
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  :
+ExitTime                   :
+Handle                     :
+SafeHandle                 :
+MachineName                : .
+MainWindowHandle           : 0
+MainWindowTitle            :
+MainModule                 :
+MaxWorkingSet              :
+MinWorkingSet              :
+Modules                    :
+NonpagedSystemMemorySize   : 12696
+NonpagedSystemMemorySize64 : 12696
+PagedMemorySize64          : 2588672
+PagedSystemMemorySize      : 118776
+PagedSystemMemorySize64    : 118776
+PeakPagedMemorySize        : 3555328
+PeakPagedMemorySize64      : 3555328
+PeakWorkingSet             : 14184448
+PeakWorkingSet64           : 14184448
+PeakVirtualMemorySize      : 105091072
+PeakVirtualMemorySize64    : 105091072
+PriorityBoostEnabled       :
+PrivateMemorySize64        : 2588672
+PrivilegedProcessorTime    :
+ProcessName                : WMIRegistrationService
+ProcessorAffinity          :
+Responding                 : True
+SessionId                  : 0
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  :
+SynchronizingObject        :
+Threads                    : {4972, 5504}
+UserProcessorTime          :
+VirtualMemorySize64        : 87965696
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 3743744
+Site                       :
+Container                  :
